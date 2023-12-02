@@ -12,7 +12,7 @@ body {
 nav {
   width: 100vw;
   min-height: 12vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0,1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -255,30 +255,35 @@ nav > div > i {
 #gallery-images > .image1 {
   grid-area: a;
   max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 #gallery-images > .image2 {
   grid-area: b;
   max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 #gallery-images > .image3 {
   grid-area: c;
   max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 #gallery-images > .image4 {
   grid-area: d;
   max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 #gallery-images > .image5 {
   grid-area: e;
   max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
@@ -301,4 +306,80 @@ nav > div > i {
     "a a a d f";
   gap: 10px 10px;
   margin: auto;
+}
+
+#find-us {
+  padding-bottom: 100px;
+}
+#find-us > h2 {
+  width: fit-content;
+  margin: 50px auto;
+  font-family: Quattrocento;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 9px solid #b62828;
+  padding-inline: 8%;
+}
+
+#footer-details > p {
+  grid-area: para;
+  font-family: Ruda;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 160% */
+  letter-spacing: 2.25px;
+  text-align: justify;
+}
+#footer-details > address {
+  grid-area: contact;
+  font-family: Ruda;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 160% */
+  letter-spacing: 2.25px;
+  text-align: justify;
+}
+#footer-details > iframe {
+  grid-area: my-maps;
+  width: 120%;
+  height: 120%;
+}
+
+#footer-details {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "para my-maps"
+    "contact my-maps";
+  gap: 0px 50px;
+}
+
+#footer2 {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+#footer2 > .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Ruda;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 160% */
+  letter-spacing: 2.25px;
+  text-align: justify;
+
+}
+
+#footer2 > img {
+  width: 202.795px;
+  height: 148.962px;
 }
