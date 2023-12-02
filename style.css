@@ -328,6 +328,7 @@ nav > div > i {
 }
 
 #footer-details > p {
+  width: 90%;
   grid-area: para;
   font-family: Ruda;
   font-size: 1.5rem;
@@ -338,6 +339,7 @@ nav > div > i {
   text-align: justify;
 }
 #footer-details > address {
+  width: 90%;
   grid-area: contact;
   font-family: Ruda;
   font-size: 1.5rem;
@@ -349,8 +351,8 @@ nav > div > i {
 }
 #footer-details > iframe {
   grid-area: my-maps;
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -360,7 +362,7 @@ nav > div > i {
   display: grid;
   grid-template-areas:
     "para my-maps"
-    "contact my-maps";
+    "contact my-maps";    
   gap: 0px 50px;
 }
 
