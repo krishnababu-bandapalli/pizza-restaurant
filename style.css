@@ -44,8 +44,13 @@ nav > ul > li > a {
   width: fit-content;
   text-decoration: none;
   color: #ffffff;
-  padding-inline: 10px;
   font-family: Ruda;
+  padding: 15px 10px;
+  border-radius: 5px;
+
+}
+nav > ul > li > a:hover {
+  background-color: #f24c4c;
 }
 nav > div {
   display: flex;
@@ -100,18 +105,19 @@ nav > div > i {
 }
 
 #about-us {
+  width: 80vw;
   display: grid;
   grid-template-areas:
     "heading heading"
     "text image";
   gap: 70px 100px;
-  padding: 50px 100px;
+  margin: 30px auto 0px;
 }
 #about-us > h2 {
   grid-area: heading;
   text-align: center;
   font-family: Quattrocento;
-  font-size: 4rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 400;
 }
@@ -124,7 +130,6 @@ nav > div > i {
   font-size: 3rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 0px; /* 0% */
 }
 
 #about-us > p {
@@ -154,7 +159,7 @@ nav > div > i {
   font-size: 3rem;
   font-style: normal;
   font-weight: 400;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 #menu > p {
@@ -346,6 +351,7 @@ nav > div > i {
   grid-area: my-maps;
   width: 120%;
   height: 120%;
+  border-radius: 10px;
 }
 
 #footer-details {
