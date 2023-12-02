@@ -11,7 +11,7 @@ body {
 
 nav {
   width: 100vw;
-  height: 12vh;
+  min-height: 12vh;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: space-between;
@@ -27,60 +27,67 @@ nav > h1 {
   font-style: normal;
   font-weight: 700;
   letter-spacing: 1.74px;
+  margin: auto;
 }
 nav > ul {
   list-style-type: none;
+  margin: auto;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   text-transform: uppercase;
 }
 nav > ul > li > a {
+  width: fit-content;
   text-decoration: none;
   color: #ffffff;
-  padding-inline: 10px;
+  padding-inline: 10px;   
   font-family: Ruda;
 }
 nav > div {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin: auto;
 }
 nav > div > i {
   width: 62.331px;
 }
-
 #hero {
   margin-top: 12vh;
-  /* position: relative;
-  top: 12vh; */
   width: 100vw;
   height: 88vh;
+  background: url("assets/pizza1.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#hero>.transbox {
+  width: 100%;
+  height: 100%;
   padding-left: 10vw;
-  /* padding-top: 10vh; */
-  background-image: url("assets/pizza1.png");
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#hero > h2 {
+#hero>.transbox > h2 {
   width: 40vw;
   font-family: Quattrocento;
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
-  letter-spacing: 9.09px;
-  /* padding-bottom: 10vh; */
+  letter-spacing: 0.568rem;
 }
 .horizontal-line {
   width: 40vw;
   height: 13px;
   background: #f24c4c;
   box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.25);
-  /* margin-bottom: 8vh; */
 }
-#hero > p {
+#hero>.transbox > p {
   width: 40vw;
   font-family: Ruda;
   font-size: 1.5rem;
