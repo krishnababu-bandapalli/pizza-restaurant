@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+nav {
+  width: 100vw;
+  height: 12vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  position: fixed;
+  top: 0;
+}
+nav > h1 {
+  font-family: Ruda;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1.74px;
+}
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-inline: 10px;
+  font-family: Ruda;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+}
+nav > div > i {
+  width: 62.331px;
+}
+
+#hero {
+  margin-top: 12vh;
+  /* position: relative;
+  top: 12vh; */
+  width: 100vw;
+  height: 88vh;
+  padding-left: 10vw;
+  /* padding-top: 10vh; */
+  background-image: url("assets/pizza1.png");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#hero > h2 {
+  width: 40vw;
+  font-family: Quattrocento;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 9.09px;
+  /* padding-bottom: 10vh; */
+}
+.horizontal-line {
+  width: 40vw;
+  height: 13px;
+  background: #f24c4c;
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.25);
+  /* margin-bottom: 8vh; */
+}
+#hero > p {
+  width: 40vw;
+  font-family: Ruda;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.25px;
+  overflow: auto;
+  text-align: justify;
+}
+
+#about-us {
+  display: grid;
+  grid-template-areas:
+    "heading heading"
+    "text image";
+  gap: 70px 100px;
+  padding: 50px 100px;
+}
+#about-us > h2 {
+  grid-area: heading;
+  text-align: center;
+  font-family: Quattrocento;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+}
+#about-us > h2 > span {
+  width: fit-content;
+  border-bottom: 10px solid #b62828;
+  padding-inline: 7%;
+  text-align: center;
+  font-family: Quattrocento;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0px; /* 0% */
+}
+
+#about-us > p {
+  grid-area: text;
+  border-top: 4px solid #f24c4c;
+  padding-top: 10px;
+  text-align: justify;
+  font-family: Ruda;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem; /* 160% */
+  letter-spacing: 0.14rem;
+  overflow: auto;
+}
+.about-us-div > img {
+  grid-area: image;
+}
+
+#menu > h2 {
+  border-bottom: 9px solid #b62828;
+  width: fit-content;
+  margin: auto;
+  padding-inline: 8%;
+  text-align: center;
+  font-family: Quattrocento;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+#menu > p {
+  width: 90vw;
+  margin: auto;
+  font-family: Ruda;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 160% */
+  letter-spacing: 2.25px;
+  text-align: justify;
+  padding-top: 30px;
+}
+
+#items {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px 50px;
+  padding-top: 50px;
+  margin: auto;
+}
+
+.item > img {
+  float: left;
+  width: 273.083px;
+  height: 200px;
+  border-radius: 10px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.item > .desc {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 15px;
+  text-align: justify;
+  word-break: break-all;
+}
+.desc > h4 {
+  color: #f2c94c;
+  font-family: Ruda;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0px; /* 0% */
+}
+.desc > p {
+  font-family: Ruda;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+}
