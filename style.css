@@ -233,3 +233,11 @@ nav > div > i {
   padding-inline: 8%;
   margin-bottom: 50px;
 }
+
+#my-indicators>button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+
+}
