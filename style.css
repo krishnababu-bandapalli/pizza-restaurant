@@ -32,10 +32,10 @@ nav > h1 {
 }
 nav > ul {
   list-style-type: none;
-  margin: auto;
+  margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   text-transform: uppercase;
@@ -45,12 +45,18 @@ nav > ul > li > a {
   text-decoration: none;
   color: #ffffff;
   font-family: Ruda;
-  padding: 15px 10px;
+  padding: 4px 3px;
   border-radius: 5px;
+}
+nav > ul > li >a:visited {
+  color: white;
+  background-color: black;
 }
 nav > ul > li > a:hover {
   background-color: #f24c4c;
+  color: white;
 }
+
 nav > div {
   display: flex;
   justify-content: center;
@@ -608,40 +614,43 @@ nav > div > i {
   }
 
   @media screen and (max-width:338px) {
-    nav ul li {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap:wrap ;
+    nav {
+      padding-left: 0;
+      width: 100vw;
     }
     nav ul li a {
       margin: 0;
       max-width: fit-content;
-      font-size: 1rem;
-      padding: 5px 2px;
+      font-size: 0.9rem;
+      padding: 4px 3px;
     }
     nav li:nth-child(6) {
       display: none;
     }
-    #hero>.transbox {
+    #hero {
+      height: 60vh;
+      overflow: hidden;
+
     }
     #hero>.transbox>h2 {
       font-size: 1.7rem;
     }
     #hero>.transbox>p {
       font-size: 1.1rem;
+      line-height: 1.2rem;
+      overflow: hidden;
+
+    }
+    #about-us {
+      width: 90vw;
     }
     #about-us > h2 {
       font-size: 1.3rem;
     }
-    #about-us {
-      gap: 10px 0px;
-    }
     #about-us p {
       letter-spacing: 0;
       font-size: 1.2rem;
-      line-height: 1.4rem;
+      line-height: 1.3rem;
     }
     #menu h2 {
       font-size: 1.3rem;
