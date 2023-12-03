@@ -151,6 +151,10 @@ nav > div > i {
   gap: 70px 100px;
   margin: 30px auto 0px;
 }
+#menu {
+  width: 90vw;
+  margin: auto;
+}
 
 #menu > h2 {
   border-bottom: 9px solid #b62828;
