@@ -12,7 +12,7 @@ body {
 nav {
   width: 100vw;
   min-height: 12vh;
-  background-color: rgba(0, 0, 0,1);
+  background-color: rgba(0, 0, 0, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,6 @@ nav > ul > li > a {
   font-family: Ruda;
   padding: 15px 10px;
   border-radius: 5px;
-
 }
 nav > ul > li > a:hover {
   background-color: #f24c4c;
@@ -104,34 +103,17 @@ nav > div > i {
   text-align: justify;
 }
 
-#about-us {
-  width: 80vw;
-  display: grid;
-  grid-template-areas:
-    "heading heading"
-    "text image";
-  gap: 70px 100px;
-  margin: 30px auto 0px;
-}
 #about-us > h2 {
   grid-area: heading;
-  text-align: center;
   font-family: Quattrocento;
   font-size: 3rem;
   font-style: normal;
   font-weight: 400;
-}
-#about-us > h2 > span {
   width: fit-content;
+  margin: auto;
   border-bottom: 10px solid #b62828;
   padding-inline: 7%;
-  text-align: center;
-  font-family: Quattrocento;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400;
 }
-
 #about-us > p {
   grid-area: text;
   border-top: 4px solid #f24c4c;
@@ -144,9 +126,20 @@ nav > div > i {
   line-height: 2.5rem; /* 160% */
   letter-spacing: 0.14rem;
   overflow: auto;
+  min-width: 40vw;
+  /* height: 90%; */
 }
-.about-us-div > img {
-  grid-area: image;
+#about-us > img {
+  grid-area: img1;
+}
+#about-us {
+  width: 80vw;
+  display: grid;
+  grid-template-areas:
+    "heading heading heading"
+    "text text img1";
+  gap: 70px 100px;
+  margin: 30px auto 0px;
 }
 
 #menu > h2 {
@@ -163,7 +156,7 @@ nav > div > i {
 }
 
 #menu > p {
-  width: 90vw;
+  width: 100%;
   margin: auto;
   font-family: Ruda;
   font-size: 25px;
@@ -362,7 +355,7 @@ nav > div > i {
   display: grid;
   grid-template-areas:
     "para my-maps"
-    "contact my-maps";    
+    "contact my-maps";
   gap: 0px 50px;
 }
 
@@ -384,10 +377,315 @@ nav > div > i {
   line-height: 40px; /* 160% */
   letter-spacing: 2.25px;
   text-align: justify;
-
 }
 
 #footer2 > img {
   width: 202.795px;
   height: 148.962px;
+}
+@media screen and (max-width: 1058px) {
+  #hero > .transbox > h2 {
+    width: 50vw;
+  }
+  .horizontal-line {
+    width: 50vw;
+  }
+  #hero > .transbox > p {
+    width: 50vw;
+  }
+  #about-us > h2 {
+    margin: auto;
+  }
+  #about-us > p {
+    border: none;
+    width: 100%;
+  }
+  #about-us {
+    width: 85vw;
+    display: grid;
+    grid-template-areas:
+      "heading"
+      "text"
+      "img1";
+    margin: 30px auto 0px;
+    gap: 20px;
+  }
+  #about-us > img {
+    max-width: 60%;
+    margin: auto;
+  }
+  #menu {
+    width: 85vw;
+    margin: auto;
+  }
+  #items {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px 50px;
+    padding-top: 50px;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 986px) {
+    nav > div {
+      display: none;
+    }
+    #hero > .transbox > h2 {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 792px) {
+    #hero > .transbox {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+    #hero > .transbox > h2 {
+      width: 80vw;
+      font-size: 4rem;
+      margin: auto;
+    }
+    #hero > .transbox > .horizontal-line {
+      width: 80vw;
+      margin: auto;
+    }
+    #hero > .transbox > p {
+      width: 80vw;
+      margin: auto;
+      padding: 0;
+    }
+    #about-us > img {
+      width: 50vw !important;
+    }
+    #items > .item > img {
+      max-width: 30vw;
+    }
+    #items > .item > div {
+      max-width: 50vw;
+    }
+    #footer-details {
+      width: 80vw;
+      margin: auto;
+      display: grid;
+      grid-template-areas:
+        "para"
+        "contact"
+        "my-maps";
+      gap: 0px 50px;
+    }
+  }
+
+  @media screen and (max-width: 610px) {
+    nav > h1 {
+      display: none;
+    }
+
+    #hero > .transbox {
+      display: grid;
+      grid-template-areas:
+        "h2-part"
+        "line-part"
+        "para-part";
+      padding: 8% 0px;
+    }
+    #hero > .transbox > h2 {
+      grid-area: h2-part;
+      font-size: 3rem;
+    }
+    #hero > .transbox > p {
+      grid-area: para-part;
+      /* font-size: 1rem; */
+    }
+    #hero > .transbox > .horizontal-line {
+      /* display: none; */
+      grid-area: line-part;
+    }
+    #about-us > h2 {
+      font-size: 2rem;
+      margin-bottom: 3%;
+      padding-bottom: 0px;
+    }
+    #about-us p {
+      padding-top: 0px;
+    }
+    #menu > h2 {
+      font-size: 2rem;
+      margin-bottom: 3%;
+      padding-bottom: 0px;
+    }
+    #menu p {
+      padding-top: 0px;
+    }
+    #items > .item > img {
+      width: 25vw;
+      height: 25vw;
+    }
+    #items > .item > .desc {
+      width: 35vw;
+      height: 25vw;
+    }
+    #items > .item > .desc > h4 {
+      font-size: 1.2rem;
+    }
+    #items > .item > .desc > p {
+      font-size: 1.1rem;
+    }
+    #carousel > h2 {
+      font-size: 2rem;
+      margin-bottom: 3%;
+    }
+    #gallery > h2 {
+      font-size: 2rem;
+      margin-bottom: 3%;
+      padding-bottom: 0px;
+    }
+    #find-us > h2 {
+      font-size: 2rem;
+      margin-bottom: 3%;
+    }
+    #footer2 {
+      display: grid;
+      grid-template-columns: auto;
+      /* width: 80%;   */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media screen and (max-width: 495px) {
+    nav > ul > li:nth-child(4) {
+      display: none;
+    }
+    nav ul {
+      margin: 0;
+      width: fit-content;
+      font-size: 1rem;
+    }
+    #hero > .transbox > h2 {
+      letter-spacing: 2px;
+    }
+    #hero > .transbox > p {
+      line-height: 2rem; /* 160% */
+      letter-spacing: 1px;
+    }
+    #about-us > p {
+      letter-spacing: 0px;
+      overflow: auto;
+    }
+    #menu p {
+      letter-spacing: 0px;
+      overflow: auto;
+    }
+    #items > .item >img {
+      margin-top: 0px;
+    }
+    #items > .item > .desc > h4 {
+      font-size: 1rem;
+    }
+    #items > .item > .desc > p {
+      font-size: 1rem;
+      letter-spacing: 0px;
+      overflow: auto;
+    }
+    #find-us p {
+      letter-spacing: 0px;
+      font-size: 1.5rem;  
+    }
+    address {
+      font-size: 1rem;
+    }
+    #footer2 {
+      width: 90vw;
+      margin:0 auto;
+
+    }
+    #footer2>img {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width:338px) {
+    nav ul li {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap:wrap ;
+    }
+    nav ul li a {
+      margin: 0;
+      max-width: fit-content;
+      font-size: 1rem;
+      padding: 5px 2px;
+    }
+    nav li:nth-child(6) {
+      display: none;
+    }
+    #hero>.transbox {
+    }
+    #hero>.transbox>h2 {
+      font-size: 1.7rem;
+    }
+    #hero>.transbox>p {
+      font-size: 1.1rem;
+    }
+    #about-us > h2 {
+      font-size: 1.3rem;
+    }
+    #about-us {
+      gap: 10px 0px;
+    }
+    #about-us p {
+      letter-spacing: 0;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+    #menu h2 {
+      font-size: 1.3rem;
+    }
+    #menu p {
+      letter-spacing: 0;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+    #items {
+      width: 80vw;
+      margin: auto;
+    }
+    #items>.item {
+      width: 100%;
+    }
+    #items>.item> img {
+      width: 50vw;
+    }
+    #items>.item> .desc {
+      width: 50vw;
+    }
+
+    #find-us h2 {
+      font-size: 1.3rem;
+    }
+    #find-us p {
+      letter-spacing: 0;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+    #carousel h2 {
+      font-size: 1.3rem;
+    }
+    #gallery h2 {
+      font-size: 1.3rem;
+    }
+    address span{
+      letter-spacing: 0;
+      font-size: 0.8rem;
+      text-align: left;
+    }
+    #footer2{
+      display: none;
+    }
+  }
 }
